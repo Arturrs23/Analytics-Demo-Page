@@ -10,8 +10,38 @@ module.exports = {
     ],
 
     theme: {
+      borderWidth: {
+        DEFAULT: '1px',
+        '0': '0',
+        '2': '2px',
+        '3': '3px',
+        '4': '4px',
+        '6': '6px',
+        '8': '8px',
+        '20': '20px',
+      },
+      letterSpacing: {
+        tightest: '-.075em',
+        tighter: '-.05em',
+        tight: '-.025em',
+        normal: '0',
+        wide: '.025em',
+        wider: '.05em',
+        widest: '.1em',
+        widest: '.25em',
+      },
+ 
         extend: {
-       
+          maxWidth: {
+            '550': '550px',
+          },
+          width: {
+            '800': '50rem',
+          },
+          lineHeight: {
+            '12': '120%',
+            
+          },
             height: {
                 'custom': '50rem',
               },
@@ -25,15 +55,26 @@ module.exports = {
               },
               backgroundImage: {
                 'hero': "url('/resources/img/main-screen.png')",
-                // 'footer-texture': "url('/img/footer-texture.png')",
+                'reports' : "url('/resources/img/screen-01.png')",
               },
               padding: {
                 '80': '80px',
+
                 
               }
         },
         clipPath: {
-            'mypolygon':"polygon(0 0,100% 0%,100% 80%,0 100%);",
+            'mypolygon':"polygon(0 0,100% 0%,100% 100%,0 100%);",
+        },
+        container: {
+          // default breakpoints but with 40px removed
+          screens: {
+            // sm: '600px',
+            // md: '728px',
+            // lg: '984px',
+            // xl: '1240px',
+            '2xl': '1600px',
+          },
         },
     },
 

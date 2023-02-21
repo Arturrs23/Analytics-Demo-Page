@@ -10,7 +10,7 @@ defineProps({
 <template>
     <button
         :type="type"
-        class="inline-flex items-center mx-3 py-2 button-color border border-transparent rounded-md font-semibold text-base text-button-color"
+        class="inline-flex items-center mx-5 py-2 button-color border border-transparent rounded-md font-semibold text-base text-button-color hover:bg-sky-700 hover:text-white hover:py-2"
     >
     <a href="login">Sign In</a>
         <slot />

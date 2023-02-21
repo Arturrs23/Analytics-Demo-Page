@@ -45,7 +45,7 @@ const navigation = [
             
             <div class="hidden sm:block pl-80">
               <div class="flex space-x-4">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-button-color  ' : 'text-button-color   hover:bg-transparent hover:border border-sky-400', 'px-3 py-2 rounded-md  font-medium text-base']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+                <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? 'bg-gray-900 text-button-color  ' : 'text-button-color   hover:bg-transparent hover:bg-sky-700 hover:text-white', 'px-3 py-2 rounded-md  font-medium text-base']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
               </div>
             </div>
           </div>
