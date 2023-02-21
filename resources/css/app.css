@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+/* global font Roboto */
+@layer base {
+    html {
+      font-family: 'Roboto';
+    }
+  }

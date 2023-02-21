@@ -11,6 +11,7 @@ module.exports = {
 
     theme: {
         extend: {
+       
             height: {
                 'custom': '50rem',
               },
@@ -20,11 +21,16 @@ module.exports = {
             colors: {
                 'main': '#172755',
                 'pink': '#EF2A82',
+                'button-color': '#8794BA',
               },
               backgroundImage: {
-                'hero': "url('./resources/img/main-screen.png')",
+                'hero': "url('/resources/img/main-screen.png')",
                 // 'footer-texture': "url('/img/footer-texture.png')",
               },
+              padding: {
+                '80': '80px',
+                
+              }
         },
         clipPath: {
             'mypolygon':"polygon(0 0,100% 0%,100% 80%,0 100%);",
@@ -35,6 +41,7 @@ module.exports = {
     plugins: [
         require('tailwind-clip-path'),
         [require('@tailwindcss/forms')],
+
       ],
     };
 
