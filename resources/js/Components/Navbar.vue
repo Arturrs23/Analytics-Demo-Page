@@ -2,15 +2,18 @@
 import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/vue/24/outline'
 import PrimaryButton from "@/Components/PrimaryButton.vue";
+import SignIn from "@/Components/SignIn.vue";
+import SignUp from "@/Components/SignUp.vue";
+
 
 
 const navigation = [
   { name: 'Home', href: '/', current: true },
   { name: 'Products', href: 'products', current: false },
-  { name: 'FAQ', href: '#', current: false },
+  { name: 'FAQ', href: 'faq', current: false },
   { name: 'Blog', href: '#', current: false },
-  { name: 'Sign In', href: 'login', current: false },
-  { name: 'Sign Up', href: 'register', current: false },
+  // { name: 'Sign In', href: 'login', current: false },
+  // { name: 'Sign Up', href: 'register', current: false },
 
 
 ]
@@ -34,7 +37,7 @@ const navigation = [
                     <path d="M36.5083 8.70613C32.9048 3.44887 26.8551 0 20 0C8.9543 0 0 8.9543 0 20C0 21.607 0.189533 23.1697 0.547447 24.667L10.7322 14.4822C11.7085 13.5059 13.2915 13.5059 14.2678 14.4822L22.5 22.7145L36.5083 8.70613Z" fill="#EF2A82"/>
                     <path d="M38.8854 13.4001L24.2678 28.0178C23.2915 28.9941 21.7085 28.9941 20.7322 28.0178L12.5 19.7855L2.53418 29.7514C5.9555 35.8662 12.495 40 20 40C31.0457 40 40 31.0457 40 20C40 17.6874 39.6075 15.4664 38.8854 13.4001Z" fill="#EF2A82"/>
                     </svg>
-                    <h3 class="text-white uppercase	font-bold">Analytics</h3>
+                    <h3 class="text-white uppercase	font-bold pl-2">Analytics</h3>
             </div>
             
             <div class="hidden sm:ml-6 sm:block">
@@ -44,9 +47,9 @@ const navigation = [
             </div>
           </div>
           <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-            <!-- sing in buttons -->
-            <PrimaryButton>Sign Up</PrimaryButton>
-            <PrimaryButton>Sign In</PrimaryButton>
+            <!-- Sign in button -->
+            <SignIn></SignIn>
+           <SignUp></SignUp>
 
   
             <!-- Profile dropdown -->
