@@ -39,6 +39,7 @@ module.exports = {
           },
           maxWidth: {
             '550': '550px',
+            '400': '400px',
           },
           width: {
             '800': '50rem',
@@ -50,6 +51,7 @@ module.exports = {
             height: {
                 'custom': '50rem',
                 'seven': '43.75rem',
+                'report': '20rem',
               },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
@@ -62,7 +64,7 @@ module.exports = {
               },
               backgroundImage: {
                 'hero': "url('/resources/img/main-screen.png')",
-                'reports' : "url('/resources/img/screen-01.png')",
+                'reports' : "url('/resources/img/chart.jpg')",
               },
               padding: {
                 '80': '80px',
