@@ -58,6 +58,7 @@ module.exports = {
                 'main': '#172755',
                 'pink': '#EF2A82',
                 'button-color': '#8794BA',
+                'card-bg': '#0F1F4B',
               },
               backgroundImage: {
                 'hero': "url('/resources/img/main-screen.png')",

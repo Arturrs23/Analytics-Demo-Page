@@ -27,3 +27,10 @@
   .inner-hero-main-bg {
     transform: skew(0deg, 8deg);
   }
+  
+  .footer-main-bg{
+    transform: skew(0deg, -8deg);
+  }
+  .inner-footer-main-bg {
+    transform: skew(0deg, 8deg);
+  }

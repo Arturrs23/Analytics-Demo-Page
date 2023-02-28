@@ -22,6 +22,8 @@
     },
     "dependencies": {
         "@headlessui/vue": "^1.7.10",
-        "@heroicons/vue": "^2.0.15"
+        "@heroicons/vue": "^2.0.15",
+        "v-calendar": "^2.4.1",
+        "vue-sweet-calendar": "^0.4.1"
     }
 }
