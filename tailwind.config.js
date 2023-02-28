@@ -32,6 +32,11 @@ module.exports = {
       },
  
         extend: {
+          skew: {
+            'bg-skew': '    transform: skew(0deg, -10deg )',
+            'inner-skew' :  ' transform: skew(0deg, 10deg )',
+
+          },
           maxWidth: {
             '550': '550px',
           },
@@ -44,6 +49,7 @@ module.exports = {
           },
             height: {
                 'custom': '50rem',
+                'seven': '43.75rem',
               },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
