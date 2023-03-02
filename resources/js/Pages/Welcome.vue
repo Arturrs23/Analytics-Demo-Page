@@ -417,9 +417,9 @@ defineProps({
 
     <!-- calendar-->
  
-    <di class="flex">
+
       <VueDatePicker v-model="date" inline auto-apply />
-    </di>
+    
 
 
 
