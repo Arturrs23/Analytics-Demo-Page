@@ -4,18 +4,21 @@ import Navbar from "@/Components/Navbar.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
 import Footer from "@/Layouts/Footer.vue";
 
-// Importing Component and style
-import { Calendar } from 'vue-sweet-calendar'
-import 'vue-sweet-calendar/dist/SweetCalendar.css'
+// calendar
+
+import { ref } from 'vue';
+import VueDatePicker from '@vuepic/vue-datepicker';
+    import '@vuepic/vue-datepicker/dist/main.css';
+
+const date = ref(new Date());
 
 defineProps({
   canLogin: Boolean,
   canRegister: Boolean,
   laravelVersion: String,
   phpVersion: String,
-  calendar: Calendar,
+ 
 });
-
 
 
 
@@ -109,14 +112,13 @@ defineProps({
 
 
 
-
-
-
 </div>
 
   
   <!-- main features -->
   <section class=" ">
+   
+     
     <div class="py-10 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-14 text-center">
       <div class="mb-8 lg:mb-16">
         <h2
@@ -413,8 +415,14 @@ defineProps({
         </div>
 
 
-    <!-- image -->
-    <div class="bg-reports  h-report  bg-no-repeat h-full w-full"></div>
+    <!-- calendar-->
+ 
+    <div>
+      <VueDatePicker v-model="date" inline auto-apply />
+    </div>
+
+
+
 
       </div>
     </div>
