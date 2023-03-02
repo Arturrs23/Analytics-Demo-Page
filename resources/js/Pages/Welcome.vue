@@ -8,7 +8,7 @@ import Footer from "@/Layouts/Footer.vue";
 
 import { ref } from 'vue';
 import VueDatePicker from '@vuepic/vue-datepicker';
-    import '@vuepic/vue-datepicker/dist/main.css';
+import '@vuepic/vue-datepicker/dist/main.css';
 
 const date = ref(new Date());
 
@@ -417,9 +417,9 @@ defineProps({
 
     <!-- calendar-->
  
-    <div>
+    <di class="flex">
       <VueDatePicker v-model="date" inline auto-apply />
-    </div>
+    </di>
 
 
 

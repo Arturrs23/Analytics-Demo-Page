@@ -34,3 +34,19 @@
   .inner-footer-main-bg {
     transform: skew(0deg, 8deg);
   } */
+
+
+  .dp__active_date{
+    border-radius: 100px!important;
+    background-color:  #0088F0!important;
+  }
+  .dp__button_bottom{
+    display: none!important;
+  }
+  .dp__calendar{
+   width: 40vw;
+    padding: 20px;
+  }
+  .dp__calendar_header{
+    width: 35vw;
+  }
