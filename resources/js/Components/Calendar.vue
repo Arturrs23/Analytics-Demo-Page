@@ -1,10 +1,10 @@
+
 <script>
 // Importing Component and style
-// import { Calendar } from 'vue-sweet-calendar'
-// import 'vue-sweet-calendar/dist/SweetCalendar.css'
+import { Calendar } from 'vue-sweet-calendar'
+import 'vue-sweet-calendar/dist/SweetCalendar.css'
 
 export default {
-  // component name
   name: 'Calendar',
   data() {
     return {

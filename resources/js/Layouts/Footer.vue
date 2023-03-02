@@ -19,7 +19,7 @@ import PrimaryButton from "@/Components/PrimaryButton.vue";
         </g>
         </svg>
         
-        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 inner-footer-main-bg">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 inner-footer-main-bg relative">
             <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12  ">
                 <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Pricing Plans</h2>
                 <p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet
@@ -80,10 +80,10 @@ import PrimaryButton from "@/Components/PrimaryButton.vue";
                        </a>
                  </div>
                 <ul class="flex justify-center">
-                    <li>Product</li>
-                    <li>Pricing Plans</li>
-                    <li>FAQ</li>
-                    <li>Blog</li>
+                    <li class="text-button-color   hover:bg-transparent hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md  font-medium text-base">Product</li>
+                    <li class="text-button-color   hover:bg-transparent hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md  font-medium text-base">Pricing Plans</li>
+                    <li class="text-button-color   hover:bg-transparent hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md  font-medium text-base">FAQ</li>
+                    <li class="text-button-color   hover:bg-transparent hover:bg-sky-700 hover:text-white px-3 py-2 rounded-md  font-medium text-base">Blog</li>
                 </ul>
                 <ul class="flex">
                     <li><svg width="10" height="20" viewBox="0 0 10 20" fill="none" xmlns="http://www.w3.org/2000/svg">

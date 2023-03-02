@@ -1,6 +1,7 @@
 <script setup>
 import { Head, Link } from '@inertiajs/vue3';
 import Navbar from "@/Components/Navbar.vue";
+
 const products = [
   {
     id: 1,
@@ -93,6 +94,13 @@ const products = [
               </div>
           </div>
       </div>
+
+
+
+
+
     </section>
+
+    
   </template>
   

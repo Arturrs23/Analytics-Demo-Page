@@ -1,4 +1,4 @@
-<script setup>
+<script type="text/ecmascript-6" setup>
 import { Head, Link } from "@inertiajs/vue3";
 import Navbar from "@/Components/Navbar.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
@@ -13,8 +13,8 @@ defineProps({
   canRegister: Boolean,
   laravelVersion: String,
   phpVersion: String,
+  calendar: Calendar,
 });
-
 
 
 
@@ -60,7 +60,7 @@ defineProps({
       </svg>
       <!-- second bigger logo -->
       <svg
-        class="absolute -z-1 top-0 right-0"
+        class="absolute -z-1 top-0 right-0 max-h-logo	"
         width="1080"
         height="798"
         viewBox="0 0 1080 798"
@@ -358,14 +358,7 @@ defineProps({
         </div>
 
 
-<!-- calendar -->
-        <!-- <div id="Calendar">
-          <Calendar
-            :eventCategories="eventCategories"
-            :events="events"
-            ref="Calendar"
-          />
-        </div> -->
+   
 
 
 
@@ -428,4 +421,5 @@ defineProps({
   </section>
 
   <Footer></Footer>
+  
 </template>

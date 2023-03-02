@@ -52,6 +52,10 @@ module.exports = {
                 'custom': '50rem',
                 'seven': '43.75rem',
                 'report': '20rem',
+                
+              },
+              maxHeight: {
+                'logo': '43rem',
               },
             fontFamily: {
                 sans: ['Figtree', ...defaultTheme.fontFamily.sans],
@@ -61,6 +65,7 @@ module.exports = {
                 'pink': '#EF2A82',
                 'button-color': '#8794BA',
                 'card-bg': '#0F1F4B',
+                'body': '#F8F9FF',
               },
               backgroundImage: {
                 'hero': "url('/resources/img/main-screen.png')",
