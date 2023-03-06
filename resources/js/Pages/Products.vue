@@ -1,4 +1,6 @@
 <script setup>
+
+
 import { Head, Link } from '@inertiajs/vue3';
 import Navbar from "@/Components/Navbar.vue";
 
@@ -42,7 +44,6 @@ const products = [
 
 <template>
     <Navbar></Navbar>
-
     <section class="h-full bg-main">
       <div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
           <div class="max-w-screen-md mb-8 lg:mb-16">

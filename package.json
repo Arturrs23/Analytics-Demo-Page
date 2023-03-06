@@ -24,7 +24,11 @@
         "@headlessui/vue": "^1.7.10",
         "@heroicons/vue": "^2.0.15",
         "@vuepic/vue-datepicker": "^4.1.0",
+        "apexcharts": "^3.37.1",
+        "chart.js": "^4.2.1",
         "v-calendar": "^2.4.1",
-        "vue-sweet-calendar": "^0.4.1"
+        "vue-chartjs": "^5.2.0",
+        "vue-sweet-calendar": "^0.4.1",
+        "vue3-apexcharts": "^1.4.1"
     }
 }
