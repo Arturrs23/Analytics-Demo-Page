@@ -29,9 +29,14 @@ module.exports = {
         wider: '.05em',
         widest: '.1em',
         widest: '.25em',
+        customTwoPixel: '2px',
       },
  
         extend: {
+          margin:{
+              '6.5' : '6.5rem',
+              'custom-five': '5rem',
+          },
           skew: {
             'bg-skew': '    transform: skew(0deg, -10deg )',
             'inner-skew' :  ' transform: skew(0deg, 10deg )',
@@ -43,6 +48,7 @@ module.exports = {
           },
           width: {
             '800': '50rem',
+            '12.5': '12.5rem',
           },
           lineHeight: {
             '12': '120%',
@@ -53,12 +59,14 @@ module.exports = {
                 'seven': '43.75rem',
                 'report': '20rem',
                 
+                
               },
               maxHeight: {
                 'logo': '43rem',
+                'card': '27.5rem',
               },
             fontFamily: {
-                sans: ['Figtree', ...defaultTheme.fontFamily.sans],
+                sans: ['Roboto', ...defaultTheme.fontFamily.sans],
             },
             colors: {
                 'main': '#172755',
@@ -73,6 +81,7 @@ module.exports = {
               },
               padding: {
                 '80': '80px',
+                '3.5': '3.5rem',
 
                 
               }

@@ -16,10 +16,10 @@ const navigation = [
 
 <template>
     <footer
-        class="bg-main border-t-20 border-pink footer-main-bg relative pt-48"
+        class="bg-main border-t-20 border-pink footer-main-bg relative pt-28"
     >
         <svg
-            class="absolute -z-5 top-12 right-0"
+            class="absolute -z-5 top-20 right-0"
             width="1005"
             height="1005"
             viewBox="0 0 1005 1005"
@@ -41,9 +41,9 @@ const navigation = [
         <div
             class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6 inner-footer-main-bg relative"
         >
-            <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+            <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-custom-five">
                 <h2
-                    class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white"
+                    class="mb-8 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white tracking-customTwoPixel"
                 >
                     Pricing Plans
                 </h2>
@@ -59,104 +59,110 @@ const navigation = [
             >
                 <!-- Pricing Card -->
                 <div
-                    class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-2xl drop-shadow-2xl shadow dark:border-gray-600 xl:p-20 bg-card-bg dark:text-white"
+                    class=" hover:scale-105	hover:ease-in-out duration-300 flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-2xl drop-shadow-2xl drop-shadow-2xl dark:border-gray-600 xl:p-16 xl:pt-14 bg-main dark:text-white max-h-card"
                 >
-                    <h3 class="mb-4 text-2xl font-semibold">Starter</h3>
+                    <h3 class=" text-3xl font-bold mb-1">Starter</h3>
                     <p
                         class="font-light text-gray-500 sm:text-lg dark:text-gray-400"
                     >
-                        up to 3 users
+                    up to 3 users
                     </p>
-                    <hr />
+                    <hr class="mt-10"/>
                     <div
-                        class="flex flex-col content-center justify-center items-center my-8"
+                        class="flex flex-col content-center justify-center items-center mt-8 mb-4"
                     >
-                        <span class="mr-2 text-5xl font-extrabold">$29</span>
-                        <span class="text-gray-500 dark:text-gray-400"
-                            >/month</span
+                        <span class="mb-2 text-5xl font-extrabold"><b class="text-3xl">$</b><b class="text-6xl">29</b></span>
+                        <span
+                            class="text-gray-500 dark:text-gray-400"
+                            dark:text-gray-400
+                            >per month</span
                         >
                     </div>
-                    <PrimaryButton class="bg-transparent border"
-                        >Order</PrimaryButton
-                    >
+
+                    <PrimaryButton class="justify-center lg:w-12.5  mt-5 bg-transparent border border-gray-500 ">Order</PrimaryButton>
                 </div>
                 <!-- Pricing Card -->
                 <div
-                    class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-2xl drop-shadow-2xl drop-shadow-2xl dark:border-gray-600 xl:p-20 xl:py-20 bg-white dark:text-blue-900"
+                    class="hover:scale-105	hover:ease-in-out duration-300 flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-2xl drop-shadow-2xl drop-shadow-2xl dark:border-gray-600 xl:p-16 xl:pt-14 bg-white dark:text-blue-900 max-h-card"
                 >
-                    <h3 class="mb-4 text-2xl font-semibold">Standart</h3>
+                    <h3 class=" text-3xl font-bold mb-1">Standart</h3>
                     <p
                         class="font-light text-gray-500 sm:text-lg dark:text-gray-400"
                     >
                         up to 20 users
                     </p>
-                    <hr />
+                    <hr class="mt-10"/>
                     <div
-                        class="flex flex-col content-center justify-center items-center my-8"
+                        class="flex flex-col content-center justify-center items-center mt-8 mb-4"
                     >
-                        <span class="mr-2 text-5xl font-extrabold">$99</span>
+                        <span class="mb-2 text-5xl font-extrabold"><b class="text-3xl">$</b><b class="text-6xl">99</b></span>
                         <span
                             class="text-gray-500 dark:text-gray-400"
                             dark:text-gray-400
-                            >/month</span
+                            >per month</span
                         >
                     </div>
 
-                    <PrimaryButton>Order</PrimaryButton>
+                    <PrimaryButton class="justify-center lg:w-12.5  mt-5">Order</PrimaryButton>
                 </div>
                 <!-- Pricing Card -->
                 <div
-                    class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 drop-shadow-2xl rounded-2xl shadow dark:border-gray-600 xl:p-20 bg-card-bg dark:text-white"
+                class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 rounded-2xl drop-shadow-2xl drop-shadow-2xl dark:border-gray-600 xl:p-16 xl:pt-14 bg-main text-white max-h-card hover:scale-105	hover:ease-in-out duration-300	"
+            >
+                <h3 class=" text-3xl font-bold mb-1">Premium</h3>
+                <p
+                    class="font-light text-gray-500 sm:text-lg dark:text-gray-400"
                 >
-                    <h3 class="mb-4 text-2xl font-semibold">Premium</h3>
-                    <p
-                        class="font-light text-gray-500 sm:text-lg dark:text-gray-400"
-                    >
-                        up to 200 users
-                    </p>
-                    <hr />
-                    <div
-                        class="flex flex-col content-center justify-center items-center my-8"
-                    >
-                        <span class="mr-2 text-5xl font-extrabold">$299</span>
-                        <span class="text-gray-500 dark:text-gray-400"
-                            >/month</span
-                        >
-                    </div>
-
-                    <PrimaryButton class="bg-transparent border"
-                        >Order</PrimaryButton
+                    up to 200 users
+                </p>
+                <hr class="mt-10"/>
+                <div
+                    class="flex flex-col content-center justify-center items-center mt-8 mb-4"
+                >
+                    <span class="mb-2 text-5xl font-extrabold"><b class="text-3xl">$</b><b class="text-6xl">299</b></span>
+                    <span
+                        class="text-gray-500 dark:text-gray-400"
+                        dark:text-gray-400
+                        >per month</span
                     >
                 </div>
+
+                <PrimaryButton class="justify-center lg:w-12.5  mt-5 bg-transparent border border-gray-500">Order</PrimaryButton>
             </div>
-            <hr class="w-100 mt-20" />
-            <div class="social flex justify-between lg:grid-cols-3">
-                <div class="flex flex-shrink-0 items-center ml-4">
+            </div>
+            <!-- HR  -->
+            <hr class="w-100 mt-6.5" />
+            <div
+                class="social flex flex-col lg:flex-row justify-between lg:grid-cols-3 pt-3.5 px-2.5"
+            >
+                <div
+                    class="flex flex-shrink-0 items-center ml-4 justify-center p-5 lg:p-0"
+                >
                     <a class="flex items-center" href="/">
                         <svg
-                            width="40"
-                            height="40"
+                            width="30"
+                            height="30"
                             viewBox="0 0 40 40"
                             fill="none"
                             xmlns="http://www.w3.org/2000/svg"
                         >
                             <path
                                 d="M36.5083 8.70613C32.9048 3.44887 26.8551 0 20 0C8.9543 0 0 8.9543 0 20C0 21.607 0.189533 23.1697 0.547447 24.667L10.7322 14.4822C11.7085 13.5059 13.2915 13.5059 14.2678 14.4822L22.5 22.7145L36.5083 8.70613Z"
-                                fill="#EF2A82"
+                                fill="#8794BA"
                             />
                             <path
                                 d="M38.8854 13.4001L24.2678 28.0178C23.2915 28.9941 21.7085 28.9941 20.7322 28.0178L12.5 19.7855L2.53418 29.7514C5.9555 35.8662 12.495 40 20 40C31.0457 40 40 31.0457 40 20C40 17.6874 39.6075 15.4664 38.8854 13.4001Z"
-                                fill="#EF2A82"
+                                fill="#8794BA"
                             />
                         </svg>
                         <h3
-                            class="text-white uppercase font-bold pl-3 text-2xl"
+                            class="text-button-color uppercase font-bold pl-3 text-base"
                         >
                             Analytics
                         </h3>
                     </a>
                 </div>
-                <div class="flex space-x-4">
+                <div class="flex space-x-6 justify-center">
                     <a
                         v-for="item in navigation"
                         :key="item.name"
@@ -171,7 +177,10 @@ const navigation = [
                         >{{ item.name }}</a
                     >
                 </div>
-                <ul class="flex">
+                <!-- socials -->
+                <ul
+                    class="flex xl:flex-row items-center space-x-12 justify-center p-5 lg:p-0"
+                >
                     <li>
                         <svg
                             width="10"
