@@ -10,7 +10,7 @@ import SignUp from "@/Components/SignUp.vue";
 const navigation = [
   // { name: 'Home', href: '/', current: true },
   { name: 'Products', href: 'products', current: false },
-  { name: 'Pricing', href: '', current: false },
+  { name: 'Pricing', href: 'pricing', current: false },
 
   { name: 'FAQ', href: 'faq', current: false },
   { name: 'Blog', href: '#', current: false },

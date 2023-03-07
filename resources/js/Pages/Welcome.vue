@@ -23,16 +23,10 @@ defineProps({
   phpVersion: String,
 
 });
-
-
-
-
-
-
 </script>
 
 <template>
-  <Head title="Just another Laravel Website" />
+  <Head title="Real-Time Business Monitoring Dashboard | Analytics" />
   <!-- container start -->
   <div class="bg-main border-b-20 border-pink h-seven hero-main-bg">
     <!-- hero -->
@@ -99,7 +93,7 @@ defineProps({
                 Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
               </p>
               <!-- button -->
-              <PrimaryButton>Try For Free</PrimaryButton>
+              <PrimaryButton></PrimaryButton>
             </div>
             <!-- hero image -->
             <div
@@ -341,8 +335,8 @@ defineProps({
   </section>
 
   <!-- Reports -->
-  <section class="pt-20">
-    <div class="container lg:px-52 mx-auto">
+  <section class="p-10 md:p-10 lg:px-20 xl:px-52   pt-20">
+    <div class="container  mx-auto">
       <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
         <div class="pt-12">
           <h2 class="mb-3 font-bold text-4xl text-main max-w-400">
@@ -357,6 +351,8 @@ defineProps({
         </div>
 
         <!-- Custom Chart component -->
+
+
           <Radar></Radar>
 
 
@@ -364,15 +360,19 @@ defineProps({
     </div>
   </section>
   <!-- secon report -->
-  <section class="pt-52">
-    <div class="container lg:px-52 mx-auto">
-      <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
-        <!-- image -->
-      <!-- Custom Chart component -->
-      <Chart></Chart>
-        <div class="pt-12">
+  <section class="pt-52 p-10 md:p-10 lg:px-20  xl:px-52   lg:pt-20 ">
+    <div class="container mx-auto">
+      <div class="flex grid grid-cols-1 gap-28 sm:grid-cols-2">
+
+
+        <!-- Custom Chart component -->
+      <Chart class=" order-1 md:order-2 "></Chart>
+
+
+
+        <div class="pt-12 md:order-2">
           <h2 class="mb-3 font-bold text-4xl text-main max-w-400">
-            Automated Reports & Widget Alerts
+            Fully customizable to address your needs 
           </h2>
           <p class="pt-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
@@ -385,8 +385,8 @@ defineProps({
     </div>
   </section>
   <!-- third report -->
-  <section class="pt-52 mb-52">
-    <div class="container lg:px-52 mx-auto">
+  <section class="pt-52 mb-52 p-10 md:p-10 lg:px-20 xl:px-52   lg:pt-20 ">
+    <div class="container  mx-auto">
       <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
         <div class="pt-12">
           <h2 class="mb-3 font-bold text-4xl text-main max-w-400">

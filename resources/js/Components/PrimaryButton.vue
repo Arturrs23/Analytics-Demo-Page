@@ -9,9 +9,19 @@ defineProps({
 
 <template>
     <button
-        :type="type"
-        class="inline-flex items-center px-16 mx-1 py-3 mt-12 bg-pink rounded-full text-base text-white
-         hover:bg-sky-700 hover:text-white tracking-wides"    >
-        <slot />
-    </button>
+    :type="type"
+    class="inline-flex items-center px-16 mx-1 py-3 mt-12 bg-pink rounded-full text-base text-white
+    hover:bg-sky-700 hover:text-white tracking-wides"
+>
+<a href="register">Try For Free</a>
+    <slot />
+</button>
 </template>
+
+
+
+
+
+
+<!-- inline-flex items-center px-16 mx-1 py-3 mt-12 bg-pink rounded-full text-base text-white
+         hover:bg-sky-700 hover:text-white tracking-wides -->

@@ -3,6 +3,8 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content="Real-Time Business Monitoring Dashboard | Analytics">
+        <meta name="description" content="Monitor your business in real-time with analytics dashboard. Get instant insights into your key performance metrics and make informed decisions to drive growth.">
 
         <title inertia>{{ config('app.name', 'Laravel') }}</title>
 

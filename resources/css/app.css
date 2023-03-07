@@ -4,7 +4,7 @@
 /* global font Roboto */
 @layer base {
     html {
-      font-family: 'Roboto';
+      font-family: 'Roboto' , 'Sans-serif';
     }
   }
 
@@ -13,7 +13,6 @@
     color: #0f0 !important;
     outline: solid #f00 1px !important;
   } */
-
 
   .bg-hero{
     background-repeat: no-repeat;
@@ -26,21 +25,12 @@
     max-width: 800px;
    
   }
+  #chart{
+    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+border-radius: 30px;
+  }
 
-  /* .hero-main-bg{
-    transform: skew(0deg, -8deg);
-  }
-  .inner-hero-main-bg {
-    transform: skew(0deg, 8deg);
-  }
-  
-  .footer-main-bg{
-    transform: skew(0deg, -8deg);
-  }
-  .inner-footer-main-bg {
-    transform: skew(0deg, 8deg);
-  } */
-
+  /* Calendar */
 
   .dp__active_date{
     border-radius: 100px!important;

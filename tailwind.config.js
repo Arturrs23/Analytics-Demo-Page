@@ -36,6 +36,8 @@ module.exports = {
           margin:{
               '6.5' : '6.5rem',
               'custom-five': '5rem',
+              // '12.5' : '12.5rem',
+              // '8' :'8rem', 
           },
           skew: {
             'bg-skew': '    transform: skew(0deg, -10deg )',
