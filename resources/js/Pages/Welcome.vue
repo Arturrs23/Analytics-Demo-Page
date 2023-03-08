@@ -29,12 +29,13 @@ defineProps({
 <template>
   <Head title="Real-Time Business Monitoring Dashboard | Analytics" />
   <!-- container start -->
-  <div class="bg-main border-b-20 border-pink h-seven hero-main-bg">
+  <div class="bg-main   h-seven ">
     <!-- hero -->
-    <section class="clip-path-mypolygon inner-hero-main-bg">
+    <section class="clip-path-mypolygon inner-hero-main-bg ">
       <div
-        class="relative sm:flex sm:justify-center sm:items-center h-custom bg-dots-darker bg-center"
+        class="relative sm:flex sm:justify-center sm:items-center h-custom bg-dots-darker bg-center "
       >
+      <div class="test"></div>
         <Navbar
           class="absolute top-0 bg-main md:bg-transparent w-full lg:px-40 z-10"
         ></Navbar>
@@ -94,13 +95,7 @@ defineProps({
                 Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
               </p>
               <!-- button -->
-              
-
-              <PrimaryButton></PrimaryButton>
-
-  
-
-
+              <a href="register"><PrimaryButton>Try for free</PrimaryButton></a> 
             </div>
             <!-- hero image -->
             <div
@@ -112,6 +107,9 @@ defineProps({
       <!-- <hr class="border-b-20 border-pink "> -->
     </section>
   </div>
+
+
+
 
   <!-- main features -->
   <section >

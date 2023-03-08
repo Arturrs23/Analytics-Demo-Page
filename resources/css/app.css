@@ -69,11 +69,8 @@ font-weight: 400;
 font-size: 12px;
 line-height: 140%;
 /* identical to box height, or 17px */
-
 text-align: center;
-
 /* text / secondary */
-
 color: #8794BA;
   }
   .dp__cell_inner,.dp__calendar_header_item{
@@ -83,12 +80,29 @@ font-weight: 400;
 font-size: 12px;
 line-height: 140%;
 /* identical to box height, or 17px */
-
 display: flex;
 align-items: center;
 text-align: center;
-
-/* text / main */
-
 color: #172755;
   }
+
+  /* .test::after {
+    content: '';
+    position: absolute;
+    bottom: 60px;
+    left: 0;
+    
+    width: 100%;
+    height: 20px;
+    background-color:#EF2A82;
+    transform-origin: bottom left;
+    transform: rotate(-4deg);
+  }
+.test-two{
+  transform-origin: bottom left;
+  transform: rotate(-4deg);
+} */
+
+
+
+h-seven
