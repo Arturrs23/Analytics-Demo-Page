@@ -131,7 +131,7 @@ const navigation = [
                 >
             </div>
 
-            <PrimaryButton class="justify-center lg:w-12.5  mt-5 bg-transparent border border-gray-500">Order</PrimaryButton>
+            <PrimaryButton  class="justify-center lg:w-12.5  mt-5 bg-transparent border border-gray-500">Order</PrimaryButton>
         </div>
         </div>
         <!-- HR  -->

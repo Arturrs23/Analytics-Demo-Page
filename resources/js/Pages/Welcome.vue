@@ -8,6 +8,7 @@ import PrimaryButton from "@/Components/PrimaryButton.vue";
 import Footer from "@/Layouts/Footer.vue";
 import Chart from "@/Components/Chart.vue";
 import Radar from "@/Components/Radar.vue";
+import SignUp from "@/Components/SignUp.vue";
 
 // calendar
 import { ref } from 'vue';
@@ -35,7 +36,7 @@ defineProps({
         class="relative sm:flex sm:justify-center sm:items-center h-custom bg-dots-darker bg-center"
       >
         <Navbar
-          class="absolute top-0 bg-transparent w-full lg:px-40 z-10"
+          class="absolute top-0 bg-main md:bg-transparent w-full lg:px-40 z-10"
         ></Navbar>
         <!-- first logo -->
         <svg
@@ -77,8 +78,8 @@ defineProps({
             />
           </g>
         </svg>
-        <div class="container relative mx-auto lg:pl-52">
-          <div class="grid grid-cols-2 gap-3">
+        <div class="container relative mx-auto p-10 md:p-0 pt-36 lg:pl-52 md:pt-0">
+          <div class="flex md:grid md:grid-cols-2 gap-3">
             <div class="hero-text mt-1">
               <h1
                 class="text-white text-5xl leading-12 font-bold tracking-wide max-w-550"
@@ -93,7 +94,13 @@ defineProps({
                 Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
               </p>
               <!-- button -->
+              
+
               <PrimaryButton></PrimaryButton>
+
+  
+
+
             </div>
             <!-- hero image -->
             <div
@@ -107,7 +114,7 @@ defineProps({
   </div>
 
   <!-- main features -->
-  <section class=" ">
+  <section >
     <div
       class="py-10 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-14 text-center"
     >
@@ -360,7 +367,7 @@ defineProps({
     </div>
   </section>
   <!-- secon report -->
-  <section class="pt-52 p-10 md:p-10 lg:px-20  xl:px-52   lg:pt-20 ">
+  <section class="lg:pt-52 p-10 md:p-10 lg:px-20  xl:px-52   lg:pt-20 ">
     <div class="container mx-auto">
       <div class="flex grid grid-cols-1 gap-28 sm:grid-cols-2">
 
@@ -385,7 +392,7 @@ defineProps({
     </div>
   </section>
   <!-- third report -->
-  <section class="pt-52 mb-52 p-10 md:p-10 lg:px-20 xl:px-52   lg:pt-20 ">
+  <section class="lg:pt-52 lg:mb-52 p-10 md:p-10 lg:px-20 xl:px-52   lg:pt-20 ">
     <div class="container  mx-auto">
       <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
         <div class="pt-12">

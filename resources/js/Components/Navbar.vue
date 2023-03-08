@@ -11,7 +11,6 @@ const navigation = [
   // { name: 'Home', href: '/', current: true },
   { name: 'Products', href: 'products', current: false },
   { name: 'Pricing', href: 'pricing', current: false },
-
   { name: 'FAQ', href: 'faq', current: false },
   { name: 'Blog', href: '#', current: false },
   { name: 'Sign In', href: 'login', current: false },
@@ -24,7 +23,7 @@ const navigation = [
 <template>
     <Disclosure as="nav" class="bg-main" v-slot="{ open }">
       <div class="mx-auto max-w-7xl px-2 py-10 sm:px-6 lg:px-8">
-        <div class="relative flex h-16 items-center justify-between flex-row-reverse md:flex-row">
+        <div class="relative p-4 md:p-0 flex h-16 items-center justify-between flex-row-reverse md:flex-row">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
@@ -52,8 +51,8 @@ const navigation = [
           <div class="absolute inset-y-0 right-10 flex items-center pr-2 sm:static sm:inset-auto  sm:pr-0">
             <!-- Sign in button -->
             <SignIn class="hidden lg:block"></SignIn>
-           <SignUp class="hidden lg:block"></SignUp>
-
+           <SignUp class="hidden lg:block inline-flex items-center px-9 mx-5 py-2 bg-transparent  border border-sky-700 rounded-full font-semibold text-base text-button-color  
+           tracking-customTwoPixel  hover:text-white"></SignUp>
   
        
           </div>
@@ -61,8 +60,8 @@ const navigation = [
       </div>
   
       <DisclosurePanel class="sm:hidden">
-        <div class="space-y-1 px-2 pt-2 pb-3">
-          <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
+        <div class="space-y-8 h-full px-2 pt-2 pb-3 ">
+          <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white ' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
         </div>
       </DisclosurePanel>
     </Disclosure>
