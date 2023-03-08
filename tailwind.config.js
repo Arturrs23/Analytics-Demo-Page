@@ -40,7 +40,7 @@ module.exports = {
               // '8' :'8rem', 
           },
           skew: {
-            'bg-skew': '    transform: skew(0deg, -10deg )',
+            'bg-skew': '    transform: skew(0deg, -7deg )',
             'inner-skew' :  ' transform: skew(0deg, 10deg )',
 
           },
@@ -60,6 +60,7 @@ module.exports = {
                 'custom': '50rem',
                 'seven': '43.75rem',
                 'report': '20rem',
+                'hero': '43rem',
                 
                 
               },

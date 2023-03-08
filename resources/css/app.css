@@ -14,21 +14,7 @@
     outline: solid #f00 1px !important;
   } */
 
-  .bg-hero{
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: contain;
-    height: 630px;
-    top: -100px;
-    /* box-shadow: 0px 18px 50px -15px rgb(25 42 89 / 20%); */
-    /* border-radius: 50px; */
-    max-width: 800px;
-   
-  }
-  #chart{
-    box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
-border-radius: 30px;
-  }
+
 
   /* Calendar */
 
@@ -86,23 +72,36 @@ text-align: center;
 color: #172755;
   }
 
-  /* .test::after {
-    content: '';
-    position: absolute;
-    bottom: 60px;
-    left: 0;
-    
+
+.section-two{
+
+    height: 100%;
     width: 100%;
-    height: 20px;
-    background-color:#EF2A82;
-    transform-origin: bottom left;
-    transform: rotate(-4deg);
-  }
-.test-two{
-  transform-origin: bottom left;
-  transform: rotate(-4deg);
-} */
+
+    transform: skewY(-7deg);
+
+   
+   
+} 
+.section{
+  transform: skewY(7deg);
+}
 
 
+.bg-hero{
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  height: 115%;
+  top: 140px;
+  /* max-width: 800px; */
+  width: 100%;
+  /* height: 550px; */
+ 
 
-h-seven
+ 
+}
+#chart{
+  box-shadow: 0px 18px 50px -15px rgba(25, 42, 89, 0.2);
+border-radius: 30px;
+}

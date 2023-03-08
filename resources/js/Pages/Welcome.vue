@@ -1,5 +1,3 @@
-
-
 <script type="text/ecmascript-6" setup>
 
 import { Head, Link } from "@inertiajs/vue3";
@@ -28,20 +26,21 @@ defineProps({
 
 <template>
   <Head title="Real-Time Business Monitoring Dashboard | Analytics" />
-  <!-- container start -->
-  <div class="bg-main   h-seven ">
-    <!-- hero -->
-    <section class="clip-path-mypolygon inner-hero-main-bg ">
-      <div
-        class="relative sm:flex sm:justify-center sm:items-center h-custom bg-dots-darker bg-center "
-      >
-      <div class="test"></div>
+  <!-- container start with outter skew -->
+  <section class="bg-main border-pink border-b-20 section-two">
+    <!-- inner skew back to normal -->
+    <div class="section h-hero relative">
+      <header>
         <Navbar
-          class="absolute top-0 bg-main md:bg-transparent w-full lg:px-40 z-10"
+          class="absolute top-0 bg-main md:bg-transparent lg:bg-main w-full lg:px-40"
         ></Navbar>
+      </header>
+
+      <div class="container relative mx-auto p-10 md:p-0 pt-36 lg:pl-52 md:pt-52"
+      >
         <!-- first logo -->
         <svg
-          class="absolute left-0 top-0 -z-1 hidden md:block"
+          class="fixed left-0 bg-main top-0 hidden md:block"
           width="560"
           height="399"
           viewBox="0 0 560 399"
@@ -60,59 +59,43 @@ defineProps({
           </g>
         </svg>
         <!-- second bigger logo -->
-        <svg
-          class="absolute -z-1 top-0 right-0 max-h-logo hidden md:block"
-          width="1080"
-          height="798"
-          viewBox="0 0 1080 798"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
+        <svg   class="fixed  -z-1 top-0 right-0  hidden md:block" width="1080"  viewBox="0 0 1080 798" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g opacity="0.07">
-            <path
-              d="M1312.47 274.985C1182.93 85.9868 965.442 -38 719 -38C321.907 -38 0 283.907 0 681C0 738.771 6.81372 794.95 19.6807 848.779L385.824 482.636C420.922 447.538 477.828 447.538 512.926 482.636L808.875 778.585L1312.47 274.985Z"
-              fill="#8794BA"
-            />
-            <path
-              d="M1397.93 443.734L872.426 969.239C837.328 1004.34 780.422 1004.34 745.324 969.239L449.375 673.29L91.1038 1031.56C214.1 1251.39 449.195 1400 719 1400C1116.09 1400 1438 1078.09 1438 681C1438 597.861 1423.89 518.017 1397.93 443.734Z"
-              fill="#8794BA"
-            />
+          <path d="M1312.47 274.985C1182.93 85.9868 965.442 -38 719 -38C321.907 -38 0 283.907 0 681C0 738.771 6.81372 794.95 19.6807 848.779L385.824 482.636C420.922 447.538 477.828 447.538 512.926 482.636L808.875 778.585L1312.47 274.985Z" fill="#8794BA"/>
+          <path d="M1397.93 443.734L872.426 969.239C837.328 1004.34 780.422 1004.34 745.324 969.239L449.375 673.29L91.1038 1031.56C214.1 1251.39 449.195 1400 719 1400C1116.09 1400 1438 1078.09 1438 681C1438 597.861 1423.89 518.017 1397.93 443.734Z" fill="#8794BA"/>
           </g>
-        </svg>
-        <div class="container relative mx-auto p-10 md:p-0 pt-36 lg:pl-52 md:pt-0">
-          <div class="flex md:grid md:grid-cols-2 gap-3">
-            <div class="hero-text mt-1">
-              <h1
-                class="text-white text-5xl leading-12 font-bold tracking-wide max-w-550"
-              >
-                Monitor your business on real-time dashboard
-              </h1>
-              <p
-                class="mt-4 font-roboto font-normal text-lg max-w-550 text-button-color"
-              >
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Elementum nisi aliquet volutpat pellentesque volutpat est.
-                Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
-              </p>
-              <!-- button -->
-              <a href="register"><PrimaryButton>Try for free</PrimaryButton></a> 
-            </div>
-            <!-- hero image -->
-            <div
-              class="bg-hero bg-cover absolute top-0 right-0 bottom-0 left-30 w-full z-10 hidden md:block"
-            ></div>
+          </svg>
+          
+   
+        <div class="flex md:grid md:grid-cols-2 gap-3">
+          <div class="hero-text mt-1 z-10" >
+            <h1
+              class="text-white text-5xl leading-12 font-bold tracking-wide max-w-550"
+            >
+              Monitor your business on real-time dashboard
+            </h1>
+            <p
+              class="mt-4 font-roboto font-normal text-lg max-w-550 text-button-color"
+            >
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+              nisi aliquet volutpat pellentesque volutpat est. Sapien in etiam
+              vitae nibh nunc mattis imperdiet sed nullam.
+            </p>
+            <!-- button -->
+            <a href="register"><PrimaryButton>Try for free</PrimaryButton></a>
+       
           </div>
         </div>
+             <!-- hero image -->
+             <div
+             class="bg-hero bg-cover absolute top-10 right-0 bottom-0 left-30 w-full z-10 hidden md:block"
+           ></div>
       </div>
-      <!-- <hr class="border-b-20 border-pink "> -->
-    </section>
-  </div>
-
-
-
+    </div>
+  </section>
 
   <!-- main features -->
-  <section >
+  <section>
     <div
       class="py-10 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-14 text-center"
     >
@@ -340,8 +323,8 @@ defineProps({
   </section>
 
   <!-- Reports -->
-  <section class="p-10 md:p-10 lg:px-20 xl:px-52   pt-20">
-    <div class="container  mx-auto">
+  <section class="p-10 md:p-10 lg:px-20 xl:px-52 pt-20">
+    <div class="container mx-auto">
       <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
         <div class="pt-12">
           <h2 class="mb-3 font-bold text-4xl text-main max-w-400">
@@ -357,27 +340,20 @@ defineProps({
 
         <!-- Custom Chart component -->
 
-
-          <Radar></Radar>
-
-
-          </div>
+        <Radar></Radar>
+      </div>
     </div>
   </section>
   <!-- secon report -->
-  <section class="lg:pt-52 p-10 md:p-10 lg:px-20  xl:px-52   lg:pt-20 ">
+  <section class="lg:pt-52 p-10 md:p-10 lg:px-20 xl:px-52 lg:pt-20">
     <div class="container mx-auto">
       <div class="flex grid grid-cols-1 gap-28 sm:grid-cols-2">
-
-
         <!-- Custom Chart component -->
-      <Chart class=" order-1 md:order-2 "></Chart>
-
-
+        <Chart class="order-1 md:order-2"></Chart>
 
         <div class="pt-12 md:order-2">
           <h2 class="mb-3 font-bold text-4xl text-main max-w-400">
-            Fully customizable to address your needs 
+            Fully customizable to address your needs
           </h2>
           <p class="pt-8">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
@@ -390,8 +366,8 @@ defineProps({
     </div>
   </section>
   <!-- third report -->
-  <section class="lg:pt-52 lg:mb-52 p-10 md:p-10 lg:px-20 xl:px-52   lg:pt-20 ">
-    <div class="container  mx-auto">
+  <section class="lg:pt-52 lg:mb-52 p-10 md:p-10 lg:px-20 xl:px-52 lg:pt-20">
+    <div class="container mx-auto">
       <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
         <div class="pt-12">
           <h2 class="mb-3 font-bold text-4xl text-main max-w-400">

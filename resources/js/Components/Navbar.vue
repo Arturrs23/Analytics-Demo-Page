@@ -23,7 +23,7 @@ const navigation = [
 <template>
     <Disclosure as="nav" class="bg-main" v-slot="{ open }">
       <div class="mx-auto max-w-7xl px-2 py-10 sm:px-6 lg:px-8">
-        <div class="relative p-4 md:p-0 flex h-16 items-center justify-between flex-row-reverse md:flex-row">
+        <div class="relative z-10 p-4 md:p-0 flex h-16 items-center justify-between flex-row-reverse md:flex-row">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
             <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
