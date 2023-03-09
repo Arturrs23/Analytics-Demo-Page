@@ -114,6 +114,6 @@ footer::before{
   left: 0px;
   transform-origin: left;
   background-color: #172755;
-  z-index: -1;
-  border-top: solid red 1px;
+  /* z-index: -1; */
+  border-top: solid  #EF2A82 20px;
 }

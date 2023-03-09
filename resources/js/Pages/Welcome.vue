@@ -366,7 +366,7 @@ defineProps({
     </div>
   </section>
   <!-- third report -->
-  <section class="lg:pt-52 lg:mb-12 p-10 md:p-10 lg:px-20 xl:px-52 lg:pt-20">
+  <section class="lg:pt-52  p-10 md:p-10 lg:px-20 xl:px-52 lg:pt-20">
     <div class="container mx-auto">
       <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
         <div class="pt-12">
@@ -381,7 +381,7 @@ defineProps({
           </p>
         </div>
         <!-- calendar-->
-        <VueDatePicker v-model="date" inline auto-apply />
+        <VueDatePicker class="z-10" v-model="date" inline auto-apply />
       </div>
     </div>
   </section>

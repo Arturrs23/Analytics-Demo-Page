@@ -20,7 +20,7 @@ const navigation = [
 
 
 
-    <footer class="bg-main  footer-main-bg relative pt-6 ">
+    <footer class="bg-main  lg:mt-36 footer-main-bg relative pt-6 ">
     <div class="">
         <svg
         class="absolute  -z-5 top-20 right-0"
