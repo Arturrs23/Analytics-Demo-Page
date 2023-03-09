@@ -1,5 +1,4 @@
 <script type="text/ecmascript-6" setup>
-
 import { Head, Link } from "@inertiajs/vue3";
 import Navbar from "@/Components/Navbar.vue";
 import PrimaryButton from "@/Components/PrimaryButton.vue";
@@ -9,9 +8,9 @@ import Radar from "@/Components/Radar.vue";
 import SignUp from "@/Components/SignUp.vue";
 
 // calendar
-import { ref } from 'vue';
-import VueDatePicker from '@vuepic/vue-datepicker';
-import '@vuepic/vue-datepicker/dist/main.css';
+import { ref } from "vue";
+import VueDatePicker from "@vuepic/vue-datepicker";
+import "@vuepic/vue-datepicker/dist/main.css";
 
 const date = ref(new Date());
 
@@ -20,7 +19,6 @@ defineProps({
   canRegister: Boolean,
   laravelVersion: String,
   phpVersion: String,
-
 });
 </script>
 
@@ -32,11 +30,12 @@ defineProps({
     <div class="section h-hero relative">
       <header>
         <Navbar
-          class="absolute top-0 bg-main md:bg-transparent lg:bg-main w-full lg:px-40"
+          class="absolute top-0 bg-main md:bg-transparent lg:bg-main w-full xl:px-40"
         ></Navbar>
       </header>
 
-      <div class="container relative mx-auto p-10 md:p-0 pt-36 lg:pl-52 md:pt-52"
+      <div
+        class="container relative mx-auto p-4 md:p-0 pt-36 lg:pl-12 xl:pl-52 md:pt-20 lg:pt-52"
       >
         <!-- first logo -->
         <svg
@@ -50,25 +49,36 @@ defineProps({
           <g opacity="0.07">
             <path
               d="M502.387 -117.35C442.928 -204.094 343.11 -261.001 230 -261.001C47.746 -261.001 -100 -113.255 -100 68.9993C-100 95.5144 -96.8727 121.299 -90.9671 146.005L77.0818 -22.0439C93.191 -38.1531 119.309 -38.1531 135.418 -22.0439L271.25 113.788L502.387 -117.35Z"
-              fill="#8794BA"
+              fill="#F8F9FF"
             />
             <path
               d="M541.609 -39.8988L300.418 201.292C284.309 217.402 258.191 217.402 242.082 201.292L106.25 65.4606L-58.186 229.897C-1.73431 330.792 106.168 398.999 230 398.999C412.254 398.999 560 251.253 560 68.9993C560 30.8407 553.523 -5.80507 541.609 -39.8988Z"
-              fill="#8794BA"
+              fill="#F8F9FF"
             />
           </g>
         </svg>
         <!-- second bigger logo -->
-        <svg   class="fixed  -z-1 top-0 right-0  hidden md:block" width="1080"  viewBox="0 0 1080 798" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg
+          class="fixed -z-1 top-0 right-0 hidden md:block"
+          width="1080"
+          viewBox="0 0 1080 798"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <g opacity="0.07">
-          <path d="M1312.47 274.985C1182.93 85.9868 965.442 -38 719 -38C321.907 -38 0 283.907 0 681C0 738.771 6.81372 794.95 19.6807 848.779L385.824 482.636C420.922 447.538 477.828 447.538 512.926 482.636L808.875 778.585L1312.47 274.985Z" fill="#8794BA"/>
-          <path d="M1397.93 443.734L872.426 969.239C837.328 1004.34 780.422 1004.34 745.324 969.239L449.375 673.29L91.1038 1031.56C214.1 1251.39 449.195 1400 719 1400C1116.09 1400 1438 1078.09 1438 681C1438 597.861 1423.89 518.017 1397.93 443.734Z" fill="#8794BA"/>
+            <path
+              d="M1312.47 274.985C1182.93 85.9868 965.442 -38 719 -38C321.907 -38 0 283.907 0 681C0 738.771 6.81372 794.95 19.6807 848.779L385.824 482.636C420.922 447.538 477.828 447.538 512.926 482.636L808.875 778.585L1312.47 274.985Z"
+              fill="#F8F9FF"
+            />
+            <path
+              d="M1397.93 443.734L872.426 969.239C837.328 1004.34 780.422 1004.34 745.324 969.239L449.375 673.29L91.1038 1031.56C214.1 1251.39 449.195 1400 719 1400C1116.09 1400 1438 1078.09 1438 681C1438 597.861 1423.89 518.017 1397.93 443.734Z"
+              fill="#F8F9FF"
+            />
           </g>
-          </svg>
-          
-   
-        <div class="flex md:grid md:grid-cols-2 gap-3">
-          <div class="hero-text mt-1 z-10" >
+        </svg>
+
+        <div class="flex md:grid md:px-10 lg:px-0 md:grid-cols-2 gap-3 pt-8">
+          <div class="hero-text mt-1 z-10">
             <h1
               class="text-white text-5xl leading-12 font-bold tracking-wide max-w-550"
             >
@@ -82,14 +92,15 @@ defineProps({
               vitae nibh nunc mattis imperdiet sed nullam.
             </p>
             <!-- button -->
-            <a href="register"><PrimaryButton>Try for free</PrimaryButton></a>
-       
+            <a href="register"
+              ><PrimaryButton class="md:mt-10">Try for free</PrimaryButton></a
+            >
           </div>
         </div>
-             <!-- hero image -->
-             <div
-             class="bg-hero bg-cover absolute top-10 right-0 bottom-0 left-30 w-full z-10 hidden md:block"
-           ></div>
+        <!-- hero image -->
+        <div
+          class="bg-hero bg-cover absolute top-10 right-0 bottom-0 left-30 md:w-80 w-full z-10 hidden md:block"
+        ></div>
       </div>
     </div>
   </section>
@@ -101,7 +112,7 @@ defineProps({
     >
       <div class="mb-8 lg:mb-16">
         <h2
-          class="mb-4 mt-24 text-4xl tracking-tight text-center font-extrabold text-gray-900 dark:text-gray"
+          class="mb-4 mt-20 text-4xl tracking-customTwoPixel text-center font-extrabold text-gray-900 dark:text-gray"
         >
           Main Features
         </h2>
@@ -193,9 +204,7 @@ defineProps({
               </defs>
             </svg>
           </div>
-          <h3 class="mt-6 font-bold dark:text-gray">
-            Monitoring 24/7
-          </h3>
+          <h3 class="mt-8 font-bold dark:text-gray">Monitoring 24/7</h3>
           <p class="text-gray-500 dark:text-gray-400 mt-4">
             Plan it, create it, launch it. Collaborate seamlessly with all the
             organization and hit your marketing goals every month with our
@@ -253,7 +262,7 @@ defineProps({
               />
             </svg>
           </div>
-          <h3 class="mt-6 font-bold dark:text-gray">Widget System</h3>
+          <h3 class="mt-8 font-bold dark:text-gray">Widget System</h3>
           <p class="text-gray-500 dark:text-gray-400 mt-4">
             Protect your organization, devices and stay compliant with our
             structured workflows and custom permissions made for you.
@@ -309,9 +318,7 @@ defineProps({
               </defs>
             </svg>
           </div>
-          <h3 class="mt-6 font-bold dark:text-gray">
-            Best Performance
-          </h3>
+          <h3 class="mt-8 font-bold dark:text-gray">Best Performance</h3>
           <p class="text-gray-500 dark:text-gray-400 mt-4">
             Auto-assign tasks, send Slack messages, and much more. Now power up
             with hundreds of new templates to help you get started.
@@ -321,9 +328,9 @@ defineProps({
     </div>
     <!--main feautres end -->
   </section>
-
+  <!-- Sections -->
   <!-- Reports -->
-  <section class="p-10 md:p-10 lg:px-20 xl:px-52 pt-20">
+  <section class="p-10 md:p-10 lg:px-20 xl:px-52 md:pt-20 md:mt-10">
     <div class="container mx-auto">
       <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
         <div class="pt-12">
@@ -345,7 +352,7 @@ defineProps({
     </div>
   </section>
   <!-- secon report -->
-  <section class="lg:pt-52 p-10 md:p-10 lg:px-20 xl:px-52 lg:pt-20">
+  <section class="lg:pt-32 p-10 md:p-10 lg:px-20 xl:px-52 lg:pt-20">
     <div class="container mx-auto">
       <div class="flex grid grid-cols-1 gap-28 sm:grid-cols-2">
         <!-- Custom Chart component -->
@@ -366,7 +373,7 @@ defineProps({
     </div>
   </section>
   <!-- third report -->
-  <section class="lg:pt-52  p-10 md:p-10 lg:px-20 xl:px-52 lg:pt-20">
+  <section class="lg:pt-32 p-10 md:p-10 lg:px-20 xl:px-52 lg:pt-20">
     <div class="container mx-auto">
       <div class="grid grid-cols-1 gap-28 sm:grid-cols-2">
         <div class="pt-12">

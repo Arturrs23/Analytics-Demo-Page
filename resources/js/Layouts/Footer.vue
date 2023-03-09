@@ -20,7 +20,7 @@ const navigation = [
 
 
 
-    <footer class="bg-main  lg:mt-36 footer-main-bg relative pt-6 ">
+    <footer class="bg-main  lg:mt-16.5 footer-main-bg relative pt-6 ">
     <div class="">
         <svg
         class="absolute  -z-5 top-20 right-0"
@@ -137,10 +137,10 @@ const navigation = [
         <!-- HR  -->
         <hr class="w-100 mt-6.5" />
         <div
-            class="social flex flex-col lg:flex-row justify-between lg:grid-cols-3 pt-3.5 px-2.5"
+            class="social flex flex-col lg:flex-row justify-between lg:grid-cols-3 pt-3.5 "
         >
             <div
-                class="flex flex-shrink-0 items-center ml-4 justify-center p-5 lg:p-0"
+                class="flex flex-shrink-0 items-center  justify-center p-5 lg:p-0"
             >
                 <a class="flex items-center" href="/">
                     <svg

@@ -20,6 +20,7 @@ module.exports = {
         '8': '8px',
         '20': '20px',
       },
+      // letter spacing
       letterSpacing: {
         tightest: '-.075em',
         tighter: '-.05em',
@@ -36,6 +37,7 @@ module.exports = {
           margin:{
               '6.5' : '6.5rem',
               'custom-five': '5rem',
+              '16.5': '16.5rem',
               // '12.5' : '12.5rem',
               // '8' :'8rem', 
           },
