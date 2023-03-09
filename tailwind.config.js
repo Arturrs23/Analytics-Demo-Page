@@ -34,12 +34,16 @@ module.exports = {
       },
  
         extend: {
+          spacing: {
+            '5.5': '5.5rem',
+          },
           margin:{
               '6.5' : '6.5rem',
               'custom-five': '5rem',
               '16.5': '16.5rem',
               // '12.5' : '12.5rem',
               // '8' :'8rem', 
+             
           },
           skew: {
             '7': '    transform: skewY(-7deg )',

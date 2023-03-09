@@ -23,7 +23,7 @@ const navigation = [
     <footer class="bg-main  lg:mt-16.5 footer-main-bg relative pt-6 ">
     <div class="">
         <svg
-        class="absolute  -z-5 top-20 right-0"
+        class="absolute  -z-5 top-5.5 right-0"
         width="1005"
         height="910"
         viewBox="0 0 1005 1005"

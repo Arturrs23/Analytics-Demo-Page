@@ -22,7 +22,7 @@ const navigation = [
 
 <template>
     <Disclosure as="nav" class="bg-main" v-slot="{ open }">
-      <div class="mx-auto max-w-7xl px-2 py-10 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl px-2 py-10 sm:px-6 lg:px-8 ">
         <div class="relative z-10 p-4 md:p-0 flex h-16 items-center justify-between flex-row-reverse md:flex-row">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
             <!-- Mobile menu button-->
