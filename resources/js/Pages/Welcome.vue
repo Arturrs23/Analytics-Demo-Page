@@ -33,7 +33,7 @@ defineProps({
           class="absolute top-0 bg-main md:bg-transparent lg:bg-main w-full xl:px-40"
         ></Navbar>
       </header>
-
+     
       <div
         class="container relative mx-auto p-4 md:p-0 pt-36 lg:pl-12 xl:pl-52 md:pt-20 lg:pt-52"
       >

@@ -44,15 +44,22 @@ const navigation = [
             
             <div class="hidden sm:block md:pl-1 lg:pl-80">
               <div class="flex space-x-4 text-button-color">
-                <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? ' text-button-color' : '', item.name === 'Sign In' ? 'md:hidden' : '', item.name === 'Sign Up' ? 'md:hidden  text-white' : '', 'px-3 py-2 rounded-md font-medium text-base md:text-xs lg:text-base  hover:bg-transparent hover:bg-sky-700 hover:text-white']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+              
+                <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? ' text-button-color' : '', item.name === 'Sign In' ? 'md:hidden' : '', item.name === 'Sign Up' ? 'md:hidden  text-white' : '', 'px-3 py-2 rounded-md font-medium text-base md:text-xs lg:text-base transition duration-300   hover:bg-transparent hover:bg-sky-700 hover:text-white']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
+           
               </div>
+        
+
+
+
+
             </div>
           </div>
           <div class="absolute inset-y-0 right-10 flex items-center pr-2 sm:static  sm:inset-auto  sm:pr-0">
             <!-- Sign in button -->
-            <SignIn class="hidden  md:text-xs xl:text-base md:block lg:block"></SignIn>
+            <SignIn class="hidden transition duration-300  md:text-xs xl:text-base md:block lg:block"></SignIn>
            <SignUp class="hidden md:block xl:text-base lg:block inline-flex items-center px-9 mx-5 py-2 bg-transparent  border border-sky-700 rounded-full font-semibold md:text-xs text-base text-button-color  
-           tracking-customTwoPixel  hover:text-white"></SignUp>
+           tracking-customTwoPixel transition duration-300  hover:text-white"></SignUp>
   
        
           </div>
