@@ -40,7 +40,7 @@ module.exports = {
               // '8' :'8rem', 
           },
           skew: {
-            'bg-skew': '    transform: skew(0deg, -7deg )',
+            '7': '    transform: skewY(-7deg )',
             'inner-skew' :  ' transform: skew(0deg, 10deg )',
 
           },

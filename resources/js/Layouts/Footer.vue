@@ -15,15 +15,15 @@ const navigation = [
 </script>
 
 <template>
-    <!-- <svg width="1600" height="271" viewBox="0 0 1600 271" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M1600 271L0.000976562 271L0.000981808 211L1600 -0.00012207L1600 271Z" fill="#EF2A82"/>
-        </svg> -->
-    <footer
-        class="bg-main border-t-20 border-pink footer-main-bg relative pt-6 skew"
-    >
-    <div class="skew-cont">
+   
+ 
+
+
+
+    <footer class="bg-main  footer-main-bg relative pt-6 ">
+    <div class="">
         <svg
-        class="absolute -z-5 top-20 right-0"
+        class="absolute  -z-5 top-20 right-0"
         width="1005"
         height="910"
         viewBox="0 0 1005 1005"
@@ -236,5 +236,13 @@ const navigation = [
         </div>
     </div>
  </div>
+
 </footer>
+
+
+
+
+
+
+
 </template>
