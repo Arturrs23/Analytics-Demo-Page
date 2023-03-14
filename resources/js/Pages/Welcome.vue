@@ -24,22 +24,16 @@ defineProps({
 
 <template>
   <Head title="Real-Time Business Monitoring Dashboard | Analytics" />
-  <!-- container start with outter skew -->
-  <section class="bg-main border-pink border-b-20 section-two">
-    <!-- inner skew back to normal -->
-    <div class="section h-hero relative">
+  <section class="header">
+    <div class=" h-hero relative">
       <header>
         <Navbar
-          class="absolute top-0 bg-main md:bg-transparent lg:bg-main w-full xl:px-40 z-20 md: z-10"
+          class="absolute top-0  md:bg-transparent w-full xl:px-40 z-20 md: z-10"
         ></Navbar>
       </header>
-     
-      <div
-        class="container relative mx-auto p-4 md:p-0 pt-36 lg:pl-12 xl:pl-52 md:pt-20 lg:pt-52  "
-      >
-        <!-- first logo -->
-        <svg
-          class="fixed left-0 bg-main top-0 hidden md:block"
+          <!-- first logo -->
+          <svg
+          class="absolute left-0  top-0 hidden md:block"
           width="560"
           height="399"
           viewBox="0 0 560 399"
@@ -57,9 +51,9 @@ defineProps({
             />
           </g>
         </svg>
-        <!-- second bigger logo -->
-        <svg
-          class="fixed -z-1 top-0 right-0 hidden md:block"
+          <!-- second bigger logo -->
+          <svg
+          class="absolute -z-1 top-0 right-0 hidden md:hidden lg:hidden xl:block"
           width="1080"
           viewBox="0 0 1080 798"
           fill="none"
@@ -76,8 +70,13 @@ defineProps({
             />
           </g>
         </svg>
+      <div
+        class="container relative mx-auto p-4 md:p-0 pt-36 lg:pl-12 xl:pl-52 md:pt-20 md:pt-52 lg:pt-52  "
+      >
+   
+      
 
-        <div class="flex md:grid md:px-10 lg:px-0 md:grid-cols-2 gap-3 pt-8">
+        <div class="flex md:block lg:grid md:px-10  lg:px-0 md:grid-cols-2 gap-3 pt-8 testing">
           <div class="hero-text mt-1 z-10">
             <h1
               class="text-white text-5xl leading-12 font-bold tracking-wide max-w-550"
@@ -93,15 +92,18 @@ defineProps({
             </p>
             <!-- button -->
             <a href="register"
-              ><PrimaryButton class="md:mt-10">Try for free</PrimaryButton></a
+              ><PrimaryButton class="md:mt-10 px-18">Try for free</PrimaryButton></a
             >
           </div>
+          <Radar></Radar>
+               <!-- hero image -->
+               <!-- <div
+               class="bg-hero bg-cover absolute top-0 right-0 bottom-0 left-0    hidden md:block"
+             ></div> -->
         </div>
-        <!-- hero image -->
-        <div
-          class="bg-hero bg-cover absolute top-10 right-0 bottom-0 left-30 md:w-80 w-full z-10 hidden md:block"
-        ></div>
+       
       </div>
+     
     </div>
   </section>
 

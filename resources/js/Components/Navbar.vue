@@ -23,8 +23,8 @@ const navigation = [
 <template>
     <Disclosure as="nav" class="bg-main" v-slot="{ open }">
       <div class="mx-auto max-w-7xl px-2 py-10 sm:px-6 lg:px-8 ">
-        <div class="relative z-10 p-4 md:p-0 flex h-16 items-center justify-between flex-row-reverse md:flex-row">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+        <div class="relative z-10 p-4 md:p-0 flex h-16 items-center justify-between flex-row-reverse md:flex-row-reverse lg:flex-row">
+          <div class="absolute inset-y-0 left-0 flex items-center lg:hidden ">
             <!-- Mobile menu button-->
             <DisclosureButton class="inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
               <span class="sr-only">Open main menu</span>
@@ -42,7 +42,7 @@ const navigation = [
                   </a>
             </div>
             
-            <div class="hidden sm:block md:pl-1 lg:pl-80">
+            <div class="hidden sm:hidden lg:block md:pl-1 lg:pl-80">
               <div class="flex space-x-4 text-button-color">
               
                 <a v-for="item in navigation" :key="item.name" :href="item.href" :class="[item.current ? ' text-button-color' : '', item.name === 'Sign In' ? 'md:hidden' : '', item.name === 'Sign Up' ? 'md:hidden  text-white' : '', 'px-3 py-2 rounded-md font-medium text-base md:text-xs lg:text-base transition duration-300   hover:bg-transparent hover:bg-sky-700 hover:text-white']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</a>
@@ -57,8 +57,8 @@ const navigation = [
           </div>
           <div class="absolute inset-y-0 right-10 flex items-center pr-2 sm:static  sm:inset-auto  sm:pr-0">
             <!-- Sign in button -->
-            <SignIn class="hidden transition duration-300  md:text-xs xl:text-base md:block lg:block"></SignIn>
-           <SignUp class="hidden md:block xl:text-base lg:block inline-flex items-center px-9 mx-5 py-2 bg-transparent  border border-sky-700 rounded-full font-semibold md:text-xs text-base text-button-color  
+            <SignIn class="hidden transition duration-300  md:text-xs xl:text-base md:hidden lg:block"></SignIn>
+           <SignUp class="hidden md:hidden xl:text-base lg:block inline-flex items-center px-9 mx-5 py-2 bg-transparent  border border-sky-700 rounded-full font-semibold md:text-xs text-base text-button-color  
            tracking-customTwoPixel transition duration-300  hover:text-white"></SignUp>
   
        
@@ -66,8 +66,8 @@ const navigation = [
         </div>
       </div>
   
-      <DisclosurePanel class="sm:hidden">
-        <div class="space-y-8 h-full px-2 pt-2 pb-3 ">
+      <DisclosurePanel class="lg:hidden">
+        <div class="space-y-8 h-full px-2 pt-2 pb-3 bg-main">
           <DisclosureButton v-for="item in navigation" :key="item.name" as="a" :href="item.href" :class="[item.current ? 'bg-gray-900 text-white ' : 'text-gray-300 hover:bg-gray-700 hover:text-white', 'block px-3 py-2 rounded-md text-base font-medium']" :aria-current="item.current ? 'page' : undefined">{{ item.name }}</DisclosureButton>
         </div>
       </DisclosurePanel>
