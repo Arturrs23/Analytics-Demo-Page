@@ -95,7 +95,57 @@ defineProps({
               ><PrimaryButton class="md:mt-10 px-18">Try for free</PrimaryButton></a
             >
           </div>
-          <Radar></Radar>
+        	<div id="wrapper">
+
+            <div class="content-area">
+              <div class="container-fluid">
+                <div class="main">
+        
+                  
+                  <div class="row mt-4">
+                    <div class="col-md-5">
+                        <div class="box columnbox mt-4">
+                          <div id="columnchart"> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="box  mt-4">
+                          <div id="linechart"> </div>
+                        </div>
+                    </div>
+                  </div>
+        
+                  <div class="row">
+                    <div class="col-md-5">
+                        <div class="box radialbox mt-4">
+                            <div id="circlechart"> </div>
+                          </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="box mt-4">
+                          <div class="mt-4">
+                            <div id="progress1"></div>
+                          </div>
+                          <div class="mt-4">
+                            <div id="progress2"></div>
+                          </div>
+                          <div class="mt-4">
+                            <div id="progress3"></div>
+                          </div>
+                        </div>
+                    </div>
+                  </div>
+        
+                  <div class="row">
+                    <div class="float-right edit-on-codepen">
+                      
+                    </div>
+                  </div>
+                </div>
+        
+              </div>
+            </div>
+          </div>
                <!-- hero image -->
                <!-- <div
                class="bg-hero bg-cover absolute top-0 right-0 bottom-0 left-0    hidden md:block"
